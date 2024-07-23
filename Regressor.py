@@ -2,7 +2,12 @@ import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 import math
-class regressor:
+class LinearRegressor:
+    """
+    This class implements LinearRegression from scratch
+        fit(X:input in numpy, Y:output in numpy): function for getting the linear regression coefficients
+        predict(X:input in numpy): function for inference on input
+    """
     def __init__(self, alpha = 0.001, eplison_2 = 0.001):
         self.alpha = alpha
         self.eplison_2 = eplison_2
